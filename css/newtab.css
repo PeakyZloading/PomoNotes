@@ -5,17 +5,27 @@
     background-color: hsl(0, 0%, 90%);
     max-width: 100%; 
     max-height: 100;
-
     z-index: 0;
 }
 
 .time-section{
     position: absolute;
     top: 25%;
-    left: 43%;
-    color: white;
+    left: 25%;
+    color: rgb(0, 0, 0);
     z-index: 1;
-    background: transparent;
+    background: white;
     font-family: sans-serif;
-    font-size: 100px;
+    font-size: 175px;
+}
+
+body{
+    margin: 0px;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(14, 14, 14);
+    background-image: url('https://source.unsplash.com/random/1920x1080/?sports');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
