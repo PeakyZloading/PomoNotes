@@ -5,15 +5,15 @@ let hovering = false;
 function updateTime() {
     const currentDate = new Date();
     let hours = currentDate.getHours(), minutes = currentDate.getMinutes(), seconds = currentDate.getSeconds();
-    let am_pm = "a.m";
+    let am_pm = "AM";
 
     //Updates time for 12hr standard and AM/PM
     if (hours > 12) {
       hours -= 12;
-      am_pm = "p.m";
+      am_pm = "PM";
     }
     else if(hours == 12){
-      am_pm = "p.m";
+      am_pm = "PM";
     }
     if (minutes < 10) {
       minutes = '0' + minutes;

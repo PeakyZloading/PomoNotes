@@ -14,7 +14,7 @@
     left: 25%;
     color: rgb(0, 0, 0);
     z-index: 1;
-    background: white;
+    background: transparent;
     font-family: sans-serif;
     font-size: 175px;
 }
@@ -24,7 +24,7 @@ body{
     height: fit-content;
     width: fit-content;
     background-color: rgb(14, 14, 14);
-    background-image: url('https://source.unsplash.com/random/1920x1080/?sports');
+    background-image: url('https://source.unsplash.com/random/1920x1080/?light');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
