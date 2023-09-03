@@ -1,7 +1,21 @@
 #myImage{
+    position: relative;
     display: block;
     margin: auto;
     background-color: hsl(0, 0%, 90%);
     max-width: 100%; 
     max-height: 100;
+
+    z-index: 0;
+}
+
+.time-section{
+    position: absolute;
+    top: 25%;
+    left: 43%;
+    color: white;
+    z-index: 1;
+    background: transparent;
+    font-family: sans-serif;
+    font-size: 100px;
 }
