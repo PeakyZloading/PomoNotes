@@ -4,6 +4,9 @@
     "name": "PomoNotes",
     "version": "0.1",
     "description": "This extension overrides the default new tab.",
+    "permissions": [
+      "storage"
+    ], 
     "icons": {
       "128": "assets/icon.png"
     },

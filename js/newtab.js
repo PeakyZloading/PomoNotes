@@ -37,6 +37,18 @@ updateTime();
 //Updates time every second
 setInterval(updateTime, 1000);
 
+function displayEditedName() {
+  chrome.storage.local.get('editedName', function (data) {
+      const editedName = data.editedName;
+      if (editedName) {
+          editableDiv.textContent = editedName;
+      }
+  });
+}
+
+// Initialize the display of the edited name
+displayEditedName();
+
 //Event listeners to detect mouse hovering
 timeElement.addEventListener('mouseenter', function () {
   hovering = true;
@@ -56,6 +68,7 @@ editableDiv.addEventListener("dblclick", function () {
 
 editableDiv.addEventListener("blur", function () {
   this.contentEditable = false;
-  // Store or process the edited content as needed
-  const editedContent = this.innerHTML;
+  const editedName = this.textContent;
+  chrome.storage.local.set({ 'editedName': editedName }, function() {
+  });
 });
