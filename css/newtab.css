@@ -33,4 +33,7 @@ body{
 #greeting{
     font-size: 25px;
     background: transparent;
+    position: fixed;
+    top: 55%;
+    left: 40%;
 }
