@@ -1,6 +1,8 @@
 const timeElement = document.getElementById('current-time');
-let hovering = false;
+const editableDiv = document.getElementById('editableName');
 
+
+let hovering = false;
 // Function to update the time
 function updateTime() {
     const currentDate = new Date();
@@ -44,4 +46,16 @@ timeElement.addEventListener('mouseenter', function () {
 timeElement.addEventListener('mouseleave', function () {
   hovering = false;
   updateTime();
+});
+
+
+editableDiv.addEventListener("dblclick", function () {
+  this.contentEditable = true;
+  this.focus();
+});
+
+editableDiv.addEventListener("blur", function () {
+  this.contentEditable = false;
+  // Store or process the edited content as needed
+  const editedContent = this.innerHTML;
 });
