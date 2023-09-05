@@ -79,14 +79,7 @@ editableDiv.addEventListener("blur", function () {
 // Listener for clicking the pomodoro button in menu
 pomoElement.addEventListener("click", function(){
   const box = document.createElement('div');
-  
-  //Box dimensions
-  box.style.width = '300px';
-  box.style.height = '150px';
-  box.style.backgroundColor = 'blue';
-  box.style.margin = '10px';
-  box.style.textAlign = 'center';
-
+  box.classList.add('pomoBox');
 
   const buttonContainerTop = document.createElement('div');
   const buttonContainerBottom = document.createElement('div');
@@ -111,9 +104,11 @@ pomoElement.addEventListener("click", function(){
   restartButton.textContent = 'Restart';
 
   // Style the buttons
-  pomoButton.classList.add('my-button'); 
-  shortButton.classList.add('my-button'); 
-  longButton.classList.add('my-button'); 
+  pomoButton.classList.add('pomoButtons'); 
+  shortButton.classList.add('pomoButtons'); 
+  longButton.classList.add('pomoButtons');
+  startButton.classList.add('pomoButtons');
+  restartButton.classList.add('pomoButtons');
 
 
   pomoButton.style.marginRight = '10px';

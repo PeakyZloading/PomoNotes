@@ -47,3 +47,25 @@ body{
     align-items: flex-end;
     margin-right: 20px; 
 }
+
+.pomoButtons{
+    border-radius: 10px;
+}
+
+.menu-buttons{
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#pomoButton{
+    margin-left: 10px;
+}
+
+.pomoBox{
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.5);
+}
