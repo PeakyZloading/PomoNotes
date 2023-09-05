@@ -195,19 +195,19 @@ pomoElement.addEventListener("click", function(){
 
   //Listener for clicking the Pomodoro button
   pomoButton.addEventListener("click", function(){
-    timerValue = 25 * 60; // Set the timer value for Pomodoro (25 minutes)
+    timerValue = 25 * 60;
     updateTimer();
   });
 
   //Listener for clicking the Short Break button
   shortButton.addEventListener("click", function(){
-    timerValue = 5 * 60; // Set the timer value for Short Break (5 minutes)
+    timerValue = 5 * 60;
     updateTimer();
   });
 
   //Listener for clicking the Long Break button
   longButton.addEventListener("click", function(){
-    timerValue = 10 * 60; // Set the timer value for Long Break (10 minutes)
+    timerValue = 10 * 60;
     updateTimer();
   });
 
