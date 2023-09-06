@@ -18,6 +18,9 @@ function updateTime() {
     else if(hours == 12){
       am_pm = "PM";
     }
+    else if(hours == 0){
+      hours = 12;
+    }
     if (minutes < 10) {
       minutes = '0' + minutes;
     }
