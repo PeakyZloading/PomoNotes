@@ -8,11 +8,9 @@ pomoElement.addEventListener("click", function(){
   
     const buttonContainerTop = document.createElement('div');
     const buttonContainerBottom = document.createElement('div');
+    buttonContainerTop.classList.add('buttonContainerTop'); 
+    buttonContainerBottom.classList.add('buttonContainerBottom'); 
   
-    //Arrange buttons
-    buttonContainerTop.style.display = 'flex';
-    buttonContainerTop.style.flexDirection = 'row';
-    buttonContainerTop.style.paddingTop = '15px';
   
     //Creates buttons
     const pomoButton = document.createElement('button');
@@ -28,7 +26,7 @@ pomoElement.addEventListener("click", function(){
     startButton.textContent = 'Start/Pause';
     restartButton.textContent = 'Restart';
   
-    // Style the buttons
+    //Style the buttons
     pomoButton.classList.add('pomoButtons'); 
     shortButton.classList.add('pomoButtons'); 
     longButton.classList.add('pomoButtons');
@@ -40,24 +38,13 @@ pomoElement.addEventListener("click", function(){
     shortButton.style.marginRight = '10px';
     startButton.style.marginRight = '10px';
   
-    // Append the buttons to the button container
+    //Append the buttons to the button container
     buttonContainerTop.appendChild(pomoButton);
     buttonContainerTop.appendChild(shortButton);
     buttonContainerTop.appendChild(longButton);
   
     buttonContainerBottom.appendChild(startButton);
     buttonContainerBottom.appendChild(restartButton);
-  
-    //Position the button container at the top of box
-    buttonContainerTop.style.position = 'absolute';
-    buttonContainerTop.style.top = '5px';
-    buttonContainerTop.style.right = '26px';
-  
-    //Position the button container at the bottom of the box
-    buttonContainerBottom.style.position = 'absolute';
-    buttonContainerBottom.style.top = '125px';
-    buttonContainerBottom.style.right = '85px';
-  
   
     //Add everything into the container
     pomoContainer.appendChild(box);
