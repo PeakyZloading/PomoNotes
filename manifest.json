@@ -1,9 +1,9 @@
 {
     "manifest_version": 3,
-    "author": "Miguel Zepda",
+    "author": "Miguel Zepeda",
     "name": "PomoNotes",
-    "version": "0.1",
-    "description": "This extension overrides the default new tab.",
+    "version": "1.0",
+    "description": "This extension creates a personalized study buddy with motivational quotes/images and a built-in Pomodoro Timer",
     "permissions": [
       "storage"
     ], 
