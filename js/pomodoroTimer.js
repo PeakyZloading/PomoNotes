@@ -19,7 +19,7 @@ pomoElement.addEventListener("click", function(){
     const startButton = document.createElement('button');
     const restartButton = document.createElement('button');
   
-  
+    //Adds text to each button
     pomoButton.textContent = 'Pomodoro';
     shortButton.textContent = 'Short Break';
     longButton.textContent = 'Long Break';
@@ -71,7 +71,7 @@ pomoElement.addEventListener("click", function(){
       box.innerHTML = `<span style="color: orange; font-size: 55px; position: relative; top: 40px; left: 0;">${minutes}:${displaySeconds}</span>`;
     }
     
-    //Listeners for all of the buttons in the timer
+    //Listeners for click events in all of the buttons in the timer
     startButton.addEventListener("click", function(){
       if (timerRunning) {
         clearInterval(timerInterval);

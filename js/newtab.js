@@ -1,8 +1,9 @@
+//Gets both elements and assigns them to variable
 const timeElement = document.getElementById('current-time');
 const editableDiv = document.getElementById('editableName');
 
 
-
+//Keeps track of mouse hovering
 let hovering = false;
 // Function to update the time
 function updateTime() {
@@ -40,7 +41,7 @@ updateTime();
 
 //Updates time every second
 setInterval(updateTime, 1000);
-
+//Displays name from local storage and saves it
 function displayEditedName() {
   chrome.storage.local.get('editedName', function (data) {
       const editedName = data.editedName;
@@ -53,23 +54,25 @@ function displayEditedName() {
 // Initialize the display of the edited name
 displayEditedName();
 
-//Event listeners to detect mouse hovering
+//Event listener to detect mouse hovering
 timeElement.addEventListener('mouseenter', function () {
   hovering = true;
   updateTime(); 
 });
 
+//Event listener to detect mouse hovering stopping
 timeElement.addEventListener('mouseleave', function () {
   hovering = false;
   updateTime();
 });
 
-
+//Event listener to detect mouse double clicks
 editableDiv.addEventListener("dblclick", function () {
   this.contentEditable = true;
   this.focus();
 });
 
+//Event listener for blur event in editing the name
 editableDiv.addEventListener("blur", function () {
   this.contentEditable = false;
   const editedName = this.textContent;
