@@ -71,10 +71,13 @@ body{
 }
 
 .menu-buttons{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
     border-radius: 10px;
+    border: 2px solid black;
     margin-top: 10px;
     background-color: orange;
-    border-color: black;
 }
 
 #pomoButton{
@@ -86,6 +89,7 @@ body{
     height: 150px;
     margin: 10px;
     text-align: center;
+    border: 2px solid orange;
     border-radius: 10px;
     background-color: rgba(0,0,0,.5);
 }
@@ -124,6 +128,10 @@ body{
 
   #current-time{
     display: inline-block;
+  }
+
+  #randomQuoteButton{
+    width: 170px;
   }
 
   

@@ -1,8 +1,16 @@
 const randQuote = document.getElementById('randomQuote');
+const randomQuoteButton = document.getElementById('randomQuoteButton');
 
 const myRequest = new Request("https://api.quotable.io/random");
 
-fetch(myRequest)
+
+apiFetch();
+
+randomQuoteButton.addEventListener("click", apiFetch);
+
+function apiFetch(){
+
+  fetch(myRequest)
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -11,7 +19,7 @@ fetch(myRequest)
     return response.json();
   })
   .then((data) => {
-    console.log(data.content);
     randQuote.textContent = data.content;
   });
+}
 
