@@ -67,7 +67,7 @@ pomoElement.addEventListener("click", function(){
         displaySeconds = seconds.toString();
       }
       //Styles the timer text and displays the string
-      box.innerHTML = `<span style="color: red; font-size: 55px; position: relative; top: 40px; left: 0;">${minutes}:${displaySeconds}</span>`;
+      box.innerHTML = `<span style="color: orange; font-size: 55px; position: relative; top: 40px; left: 0;">${minutes}:${displaySeconds}</span>`;
     }
     
     //Listeners for all of the buttons in the timer

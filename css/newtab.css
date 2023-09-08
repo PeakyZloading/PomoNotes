@@ -10,9 +10,16 @@
 
 .time-section{
     position: absolute;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
     top: 25%;
-    left: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
     color: rgb(0, 0, 0);
+    text-align: center;
     z-index: 1;
     background: transparent;
     font-family: sans-serif;
@@ -26,7 +33,7 @@ body{
     height: fit-content;
     width: fit-content;
     background-color: rgb(14, 14, 14);
-    background-image: url('https://source.unsplash.com/random/1920x1080/?light');
+    background-image: url('https://source.unsplash.com/random/1920x1080/?boxing');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -38,16 +45,16 @@ body{
     text-align: center;
     font-size: 30px;
     position: fixed;
-    top: 55%;
+    top: 110%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-text-stroke: 1px black;
 
   }
   
-  #centeredContent {
+#centeredContent {
     margin: 0 auto;
-  }
+}
 
 #pomoContainer {
     display: flex;
@@ -66,6 +73,8 @@ body{
 .menu-buttons{
     border-radius: 10px;
     margin-top: 10px;
+    background-color: orange;
+    border-color: black;
 }
 
 #pomoButton{
@@ -112,6 +121,11 @@ body{
     color: orange;
     -webkit-text-stroke: 1px black; 
   }
+
+  #current-time{
+    display: inline-block;
+  }
+
   
   
   
