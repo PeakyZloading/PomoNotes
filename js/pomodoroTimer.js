@@ -63,7 +63,8 @@ pomoElement.addEventListener("click", function(){
     
       if (seconds < 10) {
         displaySeconds = '0' + seconds;
-      } else {
+      }
+      else {
         displaySeconds = seconds.toString();
       }
       //Styles the timer text and displays the string
@@ -115,5 +116,5 @@ pomoElement.addEventListener("click", function(){
 
     //Initializes timer
     updateTimer();
-    //FIX LATER Ensures the menu button only spawns the timer once FIX LATER
-  },{once : true});
+
+  },{once:true});
