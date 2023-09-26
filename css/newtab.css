@@ -80,6 +80,10 @@ body{
     background-color: orange;
 }
 
+.menu-buttons:hover{
+    opacity:0.8;
+}
+
 #pomoButton{
     margin-left: 10px;
 }
